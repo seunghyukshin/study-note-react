@@ -1,8 +1,14 @@
 import React from "react";
-import Counter from "./Counter";
+import CounterControllContainer from "./CounterControllContainer";
+import CounterPresenter from "./CounterPresenter";
 
 const App = () => {
-  return <Counter />;
+  return (
+    <>
+      <CounterPresenter />
+      <CounterControllContainer />;
+    </>
+  );
 };
 
 export default App;
